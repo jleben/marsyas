@@ -34,3 +34,6 @@ if(MARSYAS_AUDIOIO AND MARSYAS_REALTIME)
     add_subdirectory(MarCorrelogram)
   endif()
 endif()
+
+add_executable(qt-library-tester qt-library-tester.cpp)
+qt5_use_modules(qt-library-tester Core Qml)
